@@ -72,7 +72,7 @@ const renderMonth = (monthIndex, year) => {
 
     const firstDate = new Date(year, monthIndex, 1)
     const numDaysInMonth = new Date(year, monthIndex + 1, 0).getDate()
-    const firstDay = firstDate.getDay()
+    const firstDay = firstDate.getDay() || 7;
 
 
     dateNumberElements.forEach((item, i) => {
